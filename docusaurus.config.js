@@ -18,12 +18,12 @@ const config = {
   },
 
   // --- GITHUB PAGES CONFIGURATION ---
-  // If your URL is username.github.io/ai-infra-docs/, baseUrl should be '/ai-infra-docs/'
-  url: 'https://your-GitHub-username.github.io', 
-  baseUrl: '/ai-infra-docs/', 
-  organizationName: 'your-GitHub-username', 
-  projectName: 'ai-infra-docs', 
-  trailingSlash: false, // Recommended for GitHub Pages
+  // Final URL: https://jacksteve-code.github.io/AI-Infrastructure-and-compute-optimization/
+  url: 'https://JackSteve-code.github.io', 
+  baseUrl: '/AI-Infrastructure-and-compute-optimization/', 
+  organizationName: 'JackSteve-code', 
+  projectName: 'AI-Infrastructure-and-compute-optimization', 
+  trailingSlash: false,
   // ----------------------------------
 
   onBrokenLinks: 'throw',
@@ -40,7 +40,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/', 
+          routeBasePath: '/', // Makes docs the homepage
         },
         blog: false, 
         theme: {
@@ -74,7 +74,7 @@ const config = {
             label: 'Infrastructure Guide',
           },
           {
-            href: 'https://github.com/your-GitHub-username/ai-infra-docs',
+            href: 'https://github.com/JackSteve-code/AI-Infrastructure-and-compute-optimization',
             label: 'GitHub',
             position: 'right',
           },
