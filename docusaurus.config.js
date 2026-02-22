@@ -3,29 +3,21 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AI Infrastructure', 
-  tagline: 'Compute Optimization & Infrastructure Stack',
+  title: 'JACK.SYSTEMS', 
+  tagline: 'Software and ML Engineer specializing in AI/ML infrastructure',
   favicon: 'img/favicon.ico',
 
   markdown: {
     mermaid: true,
   },
-
   themes: ['@docusaurus/theme-mermaid'],
 
-  future: {
-    v4: true, 
-  },
-
-  // --- GITHUB PAGES CONFIGURATION ---
   url: 'https://JackSteve-code.github.io', 
   baseUrl: '/AI-Infrastructure-and-compute-optimization/', 
   organizationName: 'JackSteve-code', 
   projectName: 'AI-Infrastructure-and-compute-optimization', 
   trailingSlash: false,
-  // ----------------------------------
 
-  // CHANGED THIS TO 'warn' TO PREVENT BUILD FAILURES
   onBrokenLinks: 'warn', 
   onBrokenMarkdownLinks: 'warn',
 
@@ -57,44 +49,29 @@ const config = {
       mermaid: {
         theme: {light: 'neutral', dark: 'forest'},
       },
-      image: 'img/docusaurus-social-card.jpg',
       colorMode: {
+        defaultMode: 'light',
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: '',
+        title: 'JACK.SYSTEMS',
         logo: {
-          alt: 'Site Logo',
+          alt: '',
           src: 'img/logo.svg',
+          style: { display: 'none' }, // Hides the dinosaur logo
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Infrastructure Guide',
-          },
-          {
             href: 'https://github.com/JackSteve-code/AI-Infrastructure-and-compute-optimization',
-            label: 'GitHub',
+            label: 'GitHub Source',
             position: 'right',
           },
         ],
       },
       footer: {
-        style: 'dark',
-        links: [
-          {
-            title: 'Content',
-            items: [
-              {
-                label: 'Overview',
-                to: '/', // Fixed: This now points to your home page
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} AI Infrastructure Project. Built with Docusaurus.`,
+        style: 'light',
+        links: [],
+        copyright: `© ${new Date().getFullYear()} Jack Steve | AI/ML Infrastructure Expert`,
       },
       prism: {
         theme: prismThemes.github,
